@@ -1,0 +1,13 @@
+version: '3'
+services:
+  spark:
+    image: "jupyter/pyspark-notebook"
+    command: "start-notebook.sh --NotebookApp.token=''"
+    volumes:
+     - ./spark:/home/jovyan/work
+     - ./data:/home/jovyan/work/data
+     - /Users/sgaseretto/.ivy2:/home/jovyan/.ivy2
+    ports:
+     - "8888:8888"
+     - "4040:4040"
+     - "4041:4041"
