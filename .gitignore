@@ -11,3 +11,4 @@ spark/checkpoint
 spark/derby.log
 spark/spark-warehouse
 spark/reveal.js
+spark/jupyter2slides
